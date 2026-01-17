@@ -107,21 +107,24 @@
 
     /* Banner image (FULL image, no crop) */
     .banner{
-      border:none;                 /* removed outline */
-      background:transparent;      /* removed panel look */
-      padding:0;                   /* no inner frame */
+      /* ONLY CHANGES IN THIS BLOCK: remove visible frame + avoid forced height */
+      border:none;
+      background:transparent;
+      padding:0;
       margin:14px 0 14px;
-      border-radius:16px;          /* keep rounding */
-      overflow:hidden;             /* clip image to rounding */
+      border-radius:16px;
+      overflow:hidden;
       height:auto;
+      display:block;
     }
     .banner img{
+      /* ONLY CHANGES IN THIS BLOCK: contain to prevent cutting off words */
       width:100%;
       height:auto;
       max-height:360px;
-      object-fit:cover;
+      object-fit:contain;   /* IMPORTANT: no cutoff */
       display:block;
-      background:transparent;      /* remove dark fill behind image */
+      background:transparent;
     }
 
     .metaRow{
@@ -436,9 +439,7 @@
 
           <div class="btnRow">
             <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSczXtwWnl1qqaMID6NLOGPlMbmeLVYxHGo8xrCISKPEfDmCqg/viewform?usp=header" target="_blank" rel="noopener">Sponsor Sign-Up Form</a>
-     <a class="btn" href="https://drive.google.com/file/d/1SdgbhuL8B1rpHAWWj70lsdXu-NO8OQ8b/view?usp=sharing" target="_blank" rel="noopener">View Sponsorship Packet</a>
-
-
+            <a class="btn" href="https://drive.google.com/file/d/1SdgbhuL8B1rpHAWWj70lsdXu-NO8OQ8b/view?usp=sharing" target="_blank" rel="noopener">View Sponsorship Packet</a>
           </div>
         </div>
 
@@ -499,4 +500,5 @@
   </div>
 </body>
 </html>
+
 
