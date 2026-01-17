@@ -72,30 +72,14 @@
       .topbar{flex-direction:column}
     }
 
-    /* Placeholder banner (for logo/photo later) */
+    /* Banner image */
     .banner{
       height:180px;
       border-radius:16px;
       border:1px solid var(--border);
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.45)),
-        radial-gradient(900px 280px at 15% 20%, rgba(238,70,153,.20), transparent 60%),
-        radial-gradient(900px 280px at 85% 20%, rgba(188,155,70,.18), transparent 55%),
-        rgba(255,255,255,.04);
-      display:flex;
-      align-items:flex-end;
-      padding:14px;
       margin-top:14px;
       overflow:hidden;
-    }
-    .banner .caption{
-      font-weight:850;
-      letter-spacing:.2px;
-      background:rgba(0,0,0,.35);
-      border:1px solid rgba(255,255,255,.14);
-      padding:8px 10px;
-      border-radius:999px;
-      font-size:13px;
+      background: url("banner.png") center/cover no-repeat;
     }
 
     .hero{
@@ -221,10 +205,8 @@
       </nav>
     </div>
 
-    <!-- Placeholder banner for photo/logo -->
-    <div class="banner">
-      <div class="caption">Swing Fore a Cure • Supporting Real Rats Wear Pink</div>
-    </div>
+    <!-- Banner image -->
+    <div class="banner" aria-label="Swing Fore a Cure banner"></div>
 
     <section class="hero" id="top">
       <div class="hero-grid">
@@ -309,38 +291,37 @@
       </div>
     </section>
 
-   <section id="sponsor">
-  <h2>Sponsorship</h2>
-  <div class="card">
-    <p class="muted" style="margin-top:0">
-      Sponsorships help fund the outing and directly support the mission of <b>Real Rats Wear Pink</b> through Relay For Life.
-      Packages include on-course visibility, recognition opportunities, and support for a great cause.
-    </p>
+    <section id="sponsor">
+      <h2>Sponsorship</h2>
+      <div class="card">
+        <p class="muted" style="margin-top:0">
+          Sponsorships help fund the outing and directly support the mission of <b>Real Rats Wear Pink</b> through Relay For Life.
+          Packages include on-course visibility, recognition opportunities, and support for a great cause.
+        </p>
 
-    <p class="muted small" style="margin-top:10px">
-      Want to review sponsorship levels and benefits before submitting? View the sponsorship details sheet below.
-    </p>
+        <p class="muted small" style="margin-top:10px">
+          Want to review sponsorship levels and benefits before submitting? View the sponsorship details sheet below.
+        </p>
 
-    <div class="cta-row">
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSczXtwWnl1qqaMID6NLOGPlMbmeLVYxHGo8xrCISKPEfDmCqg/viewform?usp=header" target="_blank" rel="noopener">
-        Sponsor This Event
-      </a>
+        <div class="cta-row">
+          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSczXtwWnl1qqaMID6NLOGPlMbmeLVYxHGo8xrCISKPEfDmCqg/viewform?usp=header" target="_blank" rel="noopener">
+            Sponsor This Event
+          </a>
 
-      <a class="btn" href="https://drive.google.com/file/d/1p0sZqK03F1l-UIc0WE2kBPO5G_0lQKDw/view?usp=drivesdk" target="_blank" rel="noopener">
-        View Sponsorship Details
-      </a>
+          <a class="btn" href="https://drive.google.com/file/d/1p0sZqK03F1l-UIc0WE2kBPO5G_0lQKDw/view?usp=drivesdk" target="_blank" rel="noopener">
+            View Sponsorship Details
+          </a>
 
-      <a class="btn" href="http://main.acsevents.org/goto/realratswearpink" target="_blank" rel="noopener">
-        Donate Instead
-      </a>
-    </div>
+          <a class="btn" href="http://main.acsevents.org/goto/realratswearpink" target="_blank" rel="noopener">
+            Donate Instead
+          </a>
+        </div>
 
-    <p class="muted small" style="margin-top:10px">
-      After submitting, our team will follow up if we need anything additional (logo file, golfer names, signage preferences, etc.).
-    </p>
-  </div>
-</section>
-
+        <p class="muted small" style="margin-top:10px">
+          After submitting, our team will follow up if we need anything additional (logo file, golfer names, signage preferences, etc.).
+        </p>
+      </div>
+    </section>
 
     <section id="contact">
       <h2>Contact</h2>
@@ -362,3 +343,4 @@
   </script>
 </body>
 </html>
+
