@@ -107,25 +107,21 @@
 
     /* Banner image (FULL image, no crop) */
     .banner{
-      border:1px solid var(--border);
-      border-radius:16px;
-      overflow:hidden;
-      background:rgba(255,255,255,.03);
+      border:none;                 /* removed outline */
+      background:transparent;      /* removed panel look */
+      padding:0;                   /* no inner frame */
       margin:14px 0 14px;
-
-      /* ONLY CHANGE: remove fixed height so it can't force weird empty space */
+      border-radius:16px;          /* keep rounding */
+      overflow:hidden;             /* clip image to rounding */
       height:auto;
     }
     .banner img{
       width:100%;
-
-      /* ONLY CHANGE: let image decide its height, and cap it */
       height:auto;
       max-height:360px;
-
       object-fit:contain;
       display:block;
-      background:#0f0f12;
+      background:transparent;      /* remove dark fill behind image */
     }
 
     .metaRow{
@@ -160,11 +156,7 @@
     }
     @media (max-width: 900px){
       .heroGrid{ grid-template-columns:1fr; }
-
-      /* ONLY CHANGE: remove fixed height at mobile too */
       .banner{ height:auto; }
-
-      /* OPTIONAL cap a bit smaller on mobile */
       .banner img{ max-height:300px; }
     }
 
@@ -444,8 +436,8 @@
 
           <div class="btnRow">
             <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSczXtwWnl1qqaMID6NLOGPlMbmeLVYxHGo8xrCISKPEfDmCqg/viewform?usp=header" target="_blank" rel="noopener">Sponsor Sign-Up Form</a>
-            <!-- Placeholder for packet link (we'll swap when ready) -->
-            <a class="btn secondary" href="#" onclick="alert('We will link the sponsorship packet here once finalized.'); return false;">View Sponsorship Packet</a>
+         <a class="btn secondary" href="https://drive.google.com/file/d/1SdgbhuL8B1rpHAWWj70lsdXu-NO8OQ8b/view?usp=sharing" target="_blank" rel="noopener">View Sponsorship Packet</a>
+
           </div>
         </div>
 
@@ -506,3 +498,4 @@
   </div>
 </body>
 </html>
+
